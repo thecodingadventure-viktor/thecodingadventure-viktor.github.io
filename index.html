@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Az oldal címe -->
+    <title>Az oldal címe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Fejléc szakasz a navigációval és bevezetővel -->
+    <header id="hero">
+      <!-- Navigáció -->
+      <nav class="navbar container">
+        <!-- Logó -->
+        <h1 id="logo">
+          <a href="/">
+            <img src="./assets/logo.png" alt="Logo" />
+          </a>
+        </h1>
+
+        <!-- Logó -->
+        <ul class="nav-menu">
+          <!-- Menüpont -->
+          <li><a class="nav-link" href="#blogs">Blogok</a></li>
+
+          <!-- Színtéma váltó -->
+          <div class="theme-switch">
+            <input type="checkbox" id="switch" />
+            <label class="toggle-icons" for="switch">
+              <span class="icon"></span>
+            </label>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- Bevezető szekció -->
+      <section class="header-container">
+        <!-- Profilkép és név -->
+        <img
+          class="profile-image"
+          src="assets/profile-image.svg"
+          alt="Profilkép"
+        />
+        <h1>Helló, Viktor vagyok</h1>
+
+        <!-- Rövid leírás -->
+        <div class="content-text">
+          <h2>Bemutatom a programozás világát</h2>
+
+          <p>Kézzel fogható példákon keresztül bemutatom a különböző technológiák működését, hogy tisztábban lásd át a programozás világát</p>
+        </div>
+
+        <!-- Kapcsolatfelvételi lehetőség -->
+        <a class="btn btn-secondary" href="mailto:viktor@thecodingadventure.com">Kapcsolat</a>
+      </section>
+    </header>
+
+    <!-- Szakasz a blogok megjelenítéséhez -->
+    <section id="blogs" class="container">
+      <!-- A blog címe és leírása -->
+      <div class="content-text">
+        <h2>Blogok</h2>
+        <p>Itt találhatsz érdekes cikkeket, amelyek segítenek a programozás megismerésében.</p>
+      </div>
+
+      <!-- Egyedi blogok -->
+      <div class="blogs-container">
+        <!-- Egyedi blog -->
+        <a href="" class="card" id="blog-1">
+          <!-- Bloginformáció -->
+          <div class="blog-info">
+            <div class="blog-bio">
+              <!-- Blog neve és rövid leírása -->
+              <h3>Mit csinál egy programozó?</h3>
+              <p>Egy programozó napja változatos lehet, nézzük meg...</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Lábléc elérhetőségekkel -->
+    <footer id="footer">
+      <a href="mailto:${Email cím}">viktor@thecodingadventure.com</a>
+
+      <!-- Social linkek -->
+      <div class="social">
+        <a href="${Facebook link}" target="_blank"
+          ><img src="./assets/facebook-icon.svg" alt="Facebook"
+        /></a>
+        <a href="${Linkedin link}" target="_blank"
+          ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+        /></a>
+      </div>
+
+      <!-- Aktuális dátum -->
+      <p>Viktor <span id="date"></span></p>
+    </footer>
+  </body>
+</html>
